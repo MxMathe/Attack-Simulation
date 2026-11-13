@@ -1,6 +1,6 @@
 # Simulação de ataques — Kali Linux, Medusa, Metasploitable2 e DVWA
 
-*Documentação de estudo em cibersegurança pela DIO* — testes realizados em ambiente controlado e isolado.*
+*Documentação de estudo em cibersegurança pela DIO — testes realizados em ambiente controlado e isolado.*
 
 ## ⚠️ Aviso
 
